@@ -30,15 +30,15 @@ createApp({
             taks: [
                 {
                     name: 'Learn HTML',
-                    done: 'true'
+                    done: true
                 },
                 {
                     name: 'Learn CSS',
-                    done: 'true'
+                    done: true
                 },
                 {
                     name: 'Learn JS',
-                    done: 'true'
+                    done: true
                 },
             ]
         }
