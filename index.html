@@ -17,15 +17,26 @@
 <body>
 
     <div id="app">
-        <div class="container">
-            <input type="text">
-            <button>Insert New Task</button>
-            <p>{{message}}</p>
-    
+        <div class="container m-3">
+
+            <div class="newTask">
+                <h3>Add New Task</h3>
+                <input type="text" class="me-3 mb-3" placeholder="inserisci un nuovo task">
+                <button>Insert New Task</button>
+                <p>{{message}}</p>
+            </div>
+
+            <div class="taskList">
+                <h3>To Do List</h3>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+                
         </div>
     </div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.41/dist/vue.global.min.js"></script>
     <script src="./assets/js/app.js" type="module"></script>
 </body>
 
