@@ -30,7 +30,7 @@
             <div class="taskList">
                 <h3 class="my-4">Todo List</h3>
                 <ul v-if="tasks.length !==0">
-                    <li v-for="(task) in tasks">{{task.text}}
+                    <li v-for="(task, index) in tasks" v-bind:class="{strikethrough_text: task.done}">{{task.text}}
                         <i class="fa-solid fa-times-circle fa-sm fa-fw" v-on:click="done(index)" v-if="task.done === false"></i></li>
                 </ul>
                 <p v-else>Bravo! Hai completato tutti i task!</p>
