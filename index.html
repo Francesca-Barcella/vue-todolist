@@ -21,8 +21,7 @@
         <div class="container m-5">
             <h3 class="my-4">Add new task</h3>
             <div class="addTasks">
-                <input class="me-2" type="text" placeholder="Insert New Task" v-model="newTask"
-                    @keyup.enter="addTask"></input>
+                <input class="me-2" type="text" placeholder="Insert New Task" v-model="newTask" @keyup.enter="addTask"></input>
                 <button @click="addTask">Add New Task</button>
                 <small class="text-danger ms-2" v-show="error">Devi inserire almeo 5 carattetri</small>
             </div>

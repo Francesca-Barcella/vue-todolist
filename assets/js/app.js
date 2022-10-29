@@ -28,8 +28,11 @@ createApp({
 
         return {
 
-            newTask: '',
-
+            newTask: {
+                text:'',
+                done: false
+            },
+            
             error: false,
             tasks: [
                 {
@@ -56,7 +59,7 @@ createApp({
         }
     },
 
-    methods: {    
+    methods: {
         addTask() {
             console.log('ho cliccato su add task');
             //console.log('valore input = ' + this.newTask);
