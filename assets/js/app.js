@@ -42,7 +42,7 @@ createApp({
                 },
                 {
                     text: 'learn JS',
-                    done: false
+                    done: true
                 },
                 {
                     text: 'learn VUE JS',
@@ -50,7 +50,7 @@ createApp({
                 },
                 {
                     text: 'learn PHP',
-                    done: false
+                    done: true
                 }
             ]
         }
@@ -61,9 +61,7 @@ createApp({
         /*
          MILESTONE 1
         Stampare all'interno di una lista, un item per ogni todo. Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato. */
-      
-
-
+        
         addTask() {
             console.log('ho cliccato su add task');
             //console.log('valore input = ' + this.newTask);
@@ -85,6 +83,6 @@ createApp({
             //tolgo dall'elemento l'elemento attivo che si pesca con il parametro index rilevato al click sullìicona con v-on - 1 indica che tolgie 1 elemento 8se metto due toglie anche l'<li></li> successivo
             this.tasks.splice(index, 1)
         }
-    },
+    }
 
 }).mount('#app');
