@@ -42,17 +42,28 @@ createApp({
                 },
                 {
                     text: 'learn JS',
-                    done: true
+                    done: false
                 },
                 {
                     text: 'learn VUE JS',
-                    done: true
+                    done: false
+                },
+                {
+                    text: 'learn PHP',
+                    done: false
                 }
             ]
         }
     },
 
     methods: {
+
+        /*
+         MILESTONE 1
+        Stampare all'interno di una lista, un item per ogni todo. Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato. */
+
+        //if task.done === true ? 'task.text' : 'task.text.ci sarà un modifier per il text?'
+        //capire come fare testo barrato con vue js  === line-through di css
 
         addTask() {
             console.log('ho cliccato su add task');
