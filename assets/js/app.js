@@ -29,10 +29,10 @@ createApp({
         return {
 
             newTask: {
-                text:'',
+                text: '',
                 done: false
             },
-            
+
             error: false,
             tasks: [
                 {
@@ -80,6 +80,25 @@ createApp({
             console.log('ho cliccato sul task con indice N° = ' + index)
             //tolgo dall'elemento l'elemento attivo che si pesca con il parametro index rilevato al click sullìicona con v-on - 1 indica che tolgie 1 elemento 8se metto due toglie anche l'<li></li> successivo
             this.tasks.splice(index, 1)
+        },
+
+        /* 
+        2- cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
+        */
+
+
+        // IMPOSTAZIONE IF ELSE
+        // ORA CAPIRE DOVE E COME APPLICARLO AL DOM
+        // IL TESTO STA DENTRO LI QUINDI DIREI ONCKLIC SU LI
+
+        changeStatusDone() {
+            //console.log('hai cliccato sul testo di li');
+            if (this.tasks.done === false) {
+                this.tasks.done = true
+            } else {
+                this.tasks.done = false
+            }
+            console.log(this.tasks.done + ' prova log');
         }
     }
 
