@@ -41,7 +41,7 @@ createApp({
                 },
                 {
                     text: 'learn CSS',
-                    done: true
+                    done: false
                 },
                 {
                     text: 'learn JS',
@@ -98,7 +98,7 @@ createApp({
             } else {
                 this.tasks.done = false
             }
-            console.log(this.tasks.done + ' prova log');
+            console.log(this.tasks.done);
         }
     }
 

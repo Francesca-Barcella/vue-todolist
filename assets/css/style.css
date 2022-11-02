@@ -4,5 +4,5 @@ body{
 
 .strikethrough_text{
     text-decoration: line-through;
-    color: red;
+    color: lightgreen;
 }
